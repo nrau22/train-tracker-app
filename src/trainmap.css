@@ -1,0 +1,63 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the screen */
+    overflow: hidden;
+}
+
+.topbar {
+    background: #1c1c1e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.topbar p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.main-content {
+    display: flex;
+    flex: 1; /* Ensures the main area takes remaining space */
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 300px;
+    background: #1c1c1e;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    flex-shrink: 0; /* Ensures sidebar stays fixed */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    background: #2c2c2e;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.map-container {
+    flex: 1; /* Takes remaining space */
+    height: 100%; /* Ensures full height within main-content */
+}
